@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%; 
+  padding: 15px 10px; 
+  font-size: 1.7rem; /* 20px */
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #04638F;
+  position: absolute; 
+  top: 0;
+  z-index: 1; 
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.header > div > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+.domino-logo {
+  width: 210px; 
+  background-color: #fff;
+  border-radius: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.domino-logo > a > img {
+  width: 100%;
+  height: auto;
+}
+
+/* Header.css */
+.corporate-enquiry {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.corporate-enquiry a {
+  background-color: #204a6f;
+  /* color: #062a43; */
+  padding: 10px 20px;
+  color: #204a6f;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+.corporate-enquiry a:hover {
+  background-color: #5ab7d8; 
+}
+
+.corporate-enquiry svg {
+  margin-left: 10px; 
+  fill: #ffffff; 
+  border: 3px solid #04638F; 
+  padding: 5px; 
+  border-radius: 50%; 
+  box-sizing: border-box;
+  width: 30px; 
+  height: 30px; 
+  background-color: #04638F; 
+}
+
+.menu, .domino-logo, .corporate-enquiry, .contact, .domino-store, .order-button{
+  animation: scale 1s ease forwards; 
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu>a{
+  position: relative;
+}
+
+.nav-link-hover>a::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 40px;
+  bottom: 5px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  transform-origin: right;
+}
+
+.nav-link-hover>a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  animation: nav 0.3s ease alternate;
+}
+
+
+@keyframes nav {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.logo-hover::before {
+  content: "Domino's";
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  border: solid 2px white;
+  background-color: #04638F;
+  top: 0;
+  left: 0;
+  transition: transform 300ms ease-in-out;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.logo-hover:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  animation: logo 0.3s ease alternate;
+}
+
+
+@keyframes logo {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+
+/* 
+.nav-link{
+  @apply relative font-bold
+}
+
+.nav-link::before{
+  @apply content-[''] absolute w-full h-[2px] bg-gradient-to-r from-primaryColorLight to-primaryColor -bottom-[5px] left-0 scale-x-0 transition-transform ease-in-out origin-right duration-500;
+}
+
+.nav-link:hover::before{
+  @apply scale-x-100 origin-left;
+}
+
+.btn{
+  @apply relative overflow-hidden bg-gradient-to-r from-primaryColorLight to-primaryColor px-7 py-3 rounded-full capitalize font-bold flex justify-center items-center;
+}
+
+.btn::before{
+  @apply content-[''] absolute w-[100%] h-[100%] bg-gradient-to-r from-primaryColor to-primaryColorLight top-0 left-0 rounded-full scale-x-0 transition-transform ease-in-out origin-right duration-300;
+}
+
+.btn:hover::before{
+  @apply scale-x-100 origin-left;
+}
+
+.btn_outline {
+  @apply border border-primaryColorLight text-primaryColorLight py-4 px-9 rounded-full hover:bg-primaryColorLight hover:text-whiteColor duration-300;
+} */

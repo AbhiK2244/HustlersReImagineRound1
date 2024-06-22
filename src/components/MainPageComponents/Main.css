@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+/* Main styles */
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #04638F;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100vh; 
+  overflow-y: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Pizza container */
+.pizza-container {
+  position: absolute;
+  /* top: -100%; 
+  left: 60%; */
+  top: 20%; 
+  left: 35%;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation: spin 10s linear infinite; */
+  opacity: 0;
+  animation: load 0.8s linear 1 forwards;
+  animation-delay: 0.3s;
+}
+
+
+.pizza {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+
+@keyframes load {
+  0% {
+    opacity: 0;
+    left: 40%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ingredients {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredient {
+  position: absolute;
+}
+
+#onion-1 > img {
+  transition: filter 0.3s ease;
+  height: 170px;
+}
+
+#onion-2 > img {
+  filter: blur(0.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+  transition: filter 0.3s ease;
+}
+
+#tomato-2>img{
+  height: 200px;
+}
+#tomato-1>img{
+  height: 200px;
+  transform: rotateY(180deg);
+  filter: blur(2.5px);
+}
+
+#blackolive-2> img{
+  filter: blur(2px);
+  transform: rotateZ(180deg);
+  height: 100px;
+}
+
+#pepperoni-2>img{
+  height: 170px;
+}
+
+
+.olive-2>img{
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+#onion-1, #onion-2, #pepperoni-1, #blackolive-1 {
+  animation: movement-left 1.5s ease forwards; 
+}
+@keyframes movement-left {
+  0% {
+    left: 5%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#tomato-1, #tomato-2, #pepperoni-2, #blackolive-2 {
+  animation: movement-right 1.5s ease forwards; 
+}
+@keyframes movement-right {
+  0% {
+    left: 95%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ingredient > img {
+  height: 125px;
+  filter: blur(1.5px);
+}
+
+/* Title */
+.title {
+  font-size: 27vw; 
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px; 
+  transition: all 0.3s ease; 
+  white-space: nowrap; 
+  padding-bottom: 5px;
+}
+
+/* Order button */
+.order-button {
+  overflow: hidden;
+  top: 90%;
+  position: absolute;
+  padding-right: 10px;
+}
+
+.order-button > a {
+  display: block; 
+  width: 10vw; 
+  padding: 10px;
+  border-radius: 40px; 
+  background-color: #fff;
+  color: #04638F;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+
+.order-btn>a::before {
+  content: "Order Now";
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 96%;
+  border-radius: 40px;
+  border: solid 1px white;
+  background-color: #04638F;
+  top: 0;
+  left: 0;
+  transition: transform 300ms ease-in-out;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.order-btn>a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  animation: order 0.3s ease alternate;
+}
+
+
+@keyframes order {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.menu-page{
+  background-color: #04638F;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu-heading {
+  color: white;
+  font-size: 5rem;
+  padding: 2rem 2rem 0 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heading-container{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.cards
+{
+  height: calc(100vh - 100px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 5rem;
+  padding: 2rem 4rem 4rem 4rem;
+}
+
+
+.card{
+  height: 90%;
+  width: 30%;
+  background-color: white;
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+
+
+.desc-img {
+  display: flex;
+  justify-content: space-between;
+  height: 70%;
+  width: 100%;
+}
+
+.descriptions {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1rem 1rem;
+}
+
+.img-container{
+  position: relative;
+  object-fit: cover;
+  height: 100%;
+  padding-top: 0;
+  width: 45%;
+}
+
+.image{
+  width: 230%;
+  height: 110%;
+  position: absolute;
+  right: -110%;
+  top: 2%;
+}
+
+.title-container{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 25%;
+  height: 60%;
+  display: flex;
+  justify-content: start;
+  align-items:center ;
+  
+}
+
+.product-title {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.product-description {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 549;
+  margin: 0 10% 10px 0;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 2rem;
+  gap: 0.6rem;
+}
+
+.price-quantity {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 15px;
+}
+
+.price-tag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 60%;
+  background-color: #04638F;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 40%;
+}
+.counter-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  z-index: 11;
+}
+.counter-value {
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.add-to-cart-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 100%;
+  background-color: rgb(197, 34, 34);
+  color: white;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width : 1280px) and (min-width: 900px) {
+  
+.img-container{
+  width: 40%;
+}
+
+.image{
+  width: 250%;
+  height: 120%;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  margin-right: 10%;
+}
+
+.product-description {
+  font-size: 11px;
+  margin-right: 20%;
+}
+
+.price-tag{
+  font-size: 1rem;
+}
+
+.buttons{
+  padding-top: 0;
+}
+
+.counter-button {
+  font-size: 15px;
+}
+.counter-value {
+  font-size: 15px;
+
+}
+
+.add-to-cart-button{
+  font-size: 1rem;
+ 
+}
+
+}
+
+@media (max-width : 600px) {
+  .menu-page{
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .menu-heading {
+    font-size: 3rem;
+  }
+  
+  .cards
+  {
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .card{
+    height: 55vh;
+    width: 90vw; 
+  }
+}
