@@ -3,6 +3,7 @@ import Menu from './MenuComponents/Menu';
 import Header from './MainPageComponents/Header';
 import Main from './MainPageComponents/Main';
 import './Style.css';
+import Footer from './FooterComponents/Footer';
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
       <div className='page two'>
         <Menu />
       </div>
+    <div className="page three">
+      <Footer/>
+    </div>
+
     </div>
   );
 }
