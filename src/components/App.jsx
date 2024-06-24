@@ -16,7 +16,7 @@ function App() {
       <div className='page two'>
         <Menu />
       </div>
-    <div className="page three">
+    <div className=" three">
       <Footer/>
     </div>
 
