@@ -9,7 +9,7 @@
     
 }
 
-.two{
+.two, .three{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0%;
@@ -38,4 +38,18 @@
 ::-webkit-scrollbar-thumb{
     width: 10px;
     background-color: #04638F;
+}
+
+@media (max-width: 600px)
+{
+    .two, .three{
+        height: auto;
+    }
+
+    .two, .three{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0%;
+        animation-range: entry 0% cover 10%;
+    }
 }

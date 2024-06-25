@@ -20,7 +20,7 @@ function Header() {
   return (
     <div className="header">
       <div className={"menu " + listClass}  onMouseOver={changeListClassName}>
-        <a href="#">MENU</a>
+        <a href="#menu">MENU</a>
       </div>
       <div className={"domino-store " + listClass}  onMouseOver={changeListClassName}>
         <a href="#">DOMINO'S STORE</a>

@@ -13,12 +13,14 @@ function App() {
         {" " }
         <Main />
       </div>
+
       <div className='page two'>
         <Menu />
       </div>
-    <div className=" three">
+
+      <div className="page three">
       <Footer/>
-    </div>
+      </div>
 
     </div>
   );
