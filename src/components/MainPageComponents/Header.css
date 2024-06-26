@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .header {
@@ -29,7 +28,6 @@
   padding: 10px;
 }
 
-
 .domino-logo {
   width: 210px; 
   background-color: #fff;
@@ -45,7 +43,6 @@
   height: auto;
 }
 
-/* Header.css */
 .corporate-enquiry {
   display: flex;
   align-items: center;
@@ -54,7 +51,6 @@
 
 .corporate-enquiry a {
   background-color: #204a6f;
-  /* color: #062a43; */
   padding: 10px 20px;
   color: #204a6f;
   font-size: 1.1rem;
@@ -64,7 +60,6 @@
   align-items: center;
   text-decoration: none;
 }
-
 
 .corporate-enquiry a:hover {
   background-color: #5ab7d8; 
@@ -82,7 +77,7 @@
   background-color: #04638F; 
 }
 
-.menu, .domino-logo, .corporate-enquiry, .contact, .domino-store, .order-button{
+.menu, .domino-logo, .corporate-enquiry, .contact, .domino-store, .order-button {
   animation: scale 1s ease forwards; 
 }
 
@@ -95,15 +90,16 @@
     opacity: 0.5;
   }
   100% {
+    transform: scale(1);
     opacity: 1;
   }
 }
 
-.menu>a{
+.menu>a {
   position: relative;
 }
 
-.nav-link-hover>a::before{
+.nav-link-hover>a::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -122,7 +118,6 @@
   transform-origin: left;
   animation: nav 0.3s ease alternate;
 }
-
 
 @keyframes nav {
   0% {
@@ -161,7 +156,6 @@
   animation: logo 0.3s ease alternate;
 }
 
-
 @keyframes logo {
   0% {
     transform: scaleX(0);
@@ -173,32 +167,21 @@
   }
 }
 
+@media (max-width: 600px) {
+  .header {
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust padding for better spacing */
+  }
 
-/* 
-.nav-link{
-  @apply relative font-bold
+  .header > div:not(.menu):not(.domino-logo) {
+    display: none;
+  }
+
+  .menu, .domino-logo {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .domino-logo {
+    width: 150px; /* Adjust logo size for smaller screens */
+  }
 }
-
-.nav-link::before{
-  @apply content-[''] absolute w-full h-[2px] bg-gradient-to-r from-primaryColorLight to-primaryColor -bottom-[5px] left-0 scale-x-0 transition-transform ease-in-out origin-right duration-500;
-}
-
-.nav-link:hover::before{
-  @apply scale-x-100 origin-left;
-}
-
-.btn{
-  @apply relative overflow-hidden bg-gradient-to-r from-primaryColorLight to-primaryColor px-7 py-3 rounded-full capitalize font-bold flex justify-center items-center;
-}
-
-.btn::before{
-  @apply content-[''] absolute w-[100%] h-[100%] bg-gradient-to-r from-primaryColor to-primaryColorLight top-0 left-0 rounded-full scale-x-0 transition-transform ease-in-out origin-right duration-300;
-}
-
-.btn:hover::before{
-  @apply scale-x-100 origin-left;
-}
-
-.btn_outline {
-  @apply border border-primaryColorLight text-primaryColorLight py-4 px-9 rounded-full hover:bg-primaryColorLight hover:text-whiteColor duration-300;
-} */
