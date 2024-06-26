@@ -4,6 +4,7 @@ import Header from './MainPageComponents/Header';
 import Main from './MainPageComponents/Main';
 import './Style.css';
 import Footer from './FooterComponents/Footer';
+import ThirdPage from './OrderPageComponents/ThirdPage';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
       </div>
 
       <div className="page three">
+        <ThirdPage />
+      </div>
+
+      <div className="four">
       <Footer/>
       </div>
 
