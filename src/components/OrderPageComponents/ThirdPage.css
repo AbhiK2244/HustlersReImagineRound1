@@ -13,6 +13,8 @@ body{
     align-items: center;
     justify-content: space-evenly;
     color: #fff;
+    margin: 5rem auto;
+    margin-bottom: 0;
   }
   
 .content {

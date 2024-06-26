@@ -32,25 +32,42 @@
 
 .cards
 {
-  height: calc(100vh - 100px);
-  width: 100%;
+  background-color: #04557b;
+  height: 80vh;
+  width: 90%;
+  margin: 2rem auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   position: relative;
   gap: 5rem;
   padding: 2rem 4rem 4rem 4rem;
+  border-radius: 2rem 0 0 2rem ;
+  overflow-y: auto;
+}
+
+.cards::-webkit-scrollbar {
+  width: 5px; 
+}
+
+.cards::-webkit-scrollbar-track {
+  background-color: #04557b;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
 }
 
 
 .card{
-  height: 90%;
-  width: 30%;
+  height: 97%;
+  width: 35%;
+  margin-top: 2rem;
   background-color: white;
   border-radius: 2.5rem;
   overflow: hidden;
 }
-
 
 .desc-img {
   display: flex;
@@ -170,6 +187,121 @@
   cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+  .cards{
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem 2rem 0 0;
+  }
+
+  .card{
+    width: 45%;
+  }
+
+  .cards::-webkit-scrollbar {
+    height: 5px; 
+  }
+}
+
+@media (max-width: 900px) {
+  .card{
+    width: 75%;
+  }
+}
+
+@media (max-width: 694px) {
+  .card{
+    width: 85%;
+  }
+}
+
+@media (max-width: 629px) {
+  .card{
+    width: 90%;
+  }
+}
+
+@media (max-width: 629px) {
+  .card{
+    width: 100%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .cards{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card{
+    width: 100%;
+    height: 80%;
+  }
+
+  .product-title {
+    font-size: 1.8rem;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 460px) {
+  .cards{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card{
+    width: 100%;
+    height: 80%;
+  }
+
+  .product-title {
+    font-size: 1.8rem;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 410px) {
+  .cards{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card{
+    width: 100%;
+    height: 85%;
+  }
+
+  .product-title {
+    font-size: 1.8rem;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 399px) {
+  .product-title {
+    font-size: 1.3rem;
+    margin-right: 10%;
+  }
+
+  .buttons{
+    padding: 5px;
+  }
+  .counter-button {
+    font-size: 17px;
+  }
+  .counter-value {
+    font-size: 12px;
+  
+  }
+  
+  .add-to-cart-button{
+    font-size: 0.8rem;
+   
+  }
+  .price-tag{
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width : 1280px) and (min-width: 900px) {
   
 .img-container{
@@ -224,14 +356,4 @@
     font-size: 3rem;
   }
   
-  .cards
-  {
-    height: auto;
-    flex-direction: column;
-  }
-  
-  .card{
-    height: 55vh;
-    width: 90vw; 
-  }
 }

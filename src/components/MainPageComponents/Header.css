@@ -184,4 +184,9 @@
   .domino-logo {
     width: 150px; /* Adjust logo size for smaller screens */
   }
+
+  .logo-hover::before {
+    font-size: 2rem;
+  }
+  
 }

@@ -17,6 +17,18 @@ const cards = [
         image:"/images/Chicken_delight.png",
         price:"270",
     },
+    {
+        name: "CHICKEN GOLDEN DELIGHT",
+        description:"Mmm! Barbeque chicken with a topping of golden corn loaded with extra cheese. Worth its weight in gold!",
+        image:"/images/Chicken_delight.png",
+        price:"270",
+    },
+    {
+        name: "CHICKEN GOLDEN DELIGHT",
+        description:"Mmm! Barbeque chicken with a topping of golden corn loaded with extra cheese. Worth its weight in gold!",
+        image:"/images/Chicken_delight.png",
+        price:"270",
+    },
 
 ]
 
