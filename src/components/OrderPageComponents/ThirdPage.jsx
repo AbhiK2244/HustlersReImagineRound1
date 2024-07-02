@@ -11,7 +11,7 @@ function ThirdPage()
                 <h1>30 minutes or</h1>
                 <h1>less, or it's <span className="free">free!</span></h1>
                 <p>Your dream pizza is just a tap away!</p>
-                <button className="order-now">ORDER NOW</button>
+                <button className="order-now"><span>ORDER NOW</span></button>
             </div>    
                 <div className="delivery-img">
                 <img src={delivery} alt="deliver-img" className="animated-img"/>

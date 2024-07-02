@@ -3,7 +3,7 @@ import './App.css';
 
 function Button() {
   return (
-    <button className="add-to-cart-button">ADD TO CART</button>
+    <button className="add-to-cart-button"><span>ADD TO CART</span></button>
   );
 }
 
