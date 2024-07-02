@@ -11,7 +11,7 @@ function Menu() {
         </div>
         <div className="cards">
           {cards.map((card) => {
-            return <MenuCard name = {card.name} description={card.description} image={card.image} price={card.price}/>
+            return <MenuCard key = {card.id} name = {card.name} description={card.description} image={card.image} price={card.price}/>
           })}
         </div>
     </div>
