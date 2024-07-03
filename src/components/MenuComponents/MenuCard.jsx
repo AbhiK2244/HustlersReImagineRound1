@@ -8,6 +8,7 @@ function MenuCard(props) {
   const cardRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
 
+
   useEffect(() => {
     const cursorElement = cursorRef.current;
     const cardElement = cardRef.current;
@@ -41,8 +42,19 @@ function MenuCard(props) {
     };
   }, []);
 
+  function handleMouseOver(event) {
+    console.log("event target", event.target.id)
+
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card) => {
+      console.log("card", card.id)
+    });
+
+    console.log("event", event.target)
+  }
+
   return (
-    <div className="card" ref={cardRef}>
+    <div id={props.id} onMouseOver={handleMouseOver} className="card" ref={cardRef}>
       <div className="cursor" ref={cursorRef} style={{ display: isHovered ? 'block' : 'none' }}></div>
       <div className="desc-img">
         <div className="descriptions">
