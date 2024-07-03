@@ -51,17 +51,36 @@
   justify-self: center;
 }
 
-.corporate-enquiry a {
-  background-color: #204a6f;
-  padding: 10px 20px;
-  color: #204a6f;
-  font-size: 1.1rem;
+.corporate-enquiry span{
+  background-color: #0f85c0;
+  padding: 7px 10px;
+  color: white;
+  font-size: 0.8rem;
   letter-spacing: 0;
   border-radius: 30px;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
+
+.corporate-enquiry input {
+  background-color: transparent;
+  padding: 3px 7px;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: none;
+}
+
+.corporate-enquiry input::-webkit-input-placeholder{
+  color: white;
+}
+
+
 
 .corporate-enquiry a:hover {
   background-color: #5ab7d8; 

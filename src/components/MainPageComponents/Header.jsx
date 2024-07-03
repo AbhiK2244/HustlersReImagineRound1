@@ -34,7 +34,8 @@ function Header() {
         <a href="#">CONTACT</a>
       </div>
       <div className="corporate-enquiry">
-        <a href="#">CORPORATE ENQUIRY <SearchIcon /> </a> 
+        {/* <a href="#"><input id='corporate-search' placeholder='CORPORATE ENQUIRY'></input> <SearchIcon /> </a>  */}
+        <span ><input id='corporate-search' placeholder='CORPORATE ENQUIRY'></input> <SearchIcon /> </span>
       </div>
     </div>
   );
