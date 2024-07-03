@@ -40,7 +40,7 @@ function Main() {
       </div>
 
       <div className="title">
-        <span>HOT & FRESH</span>
+        <span id='title-text'>HOT & FRESH</span>
       </div>
 
       <div className={"order-button " + orderClassName} onMouseOver={changeClassName}>

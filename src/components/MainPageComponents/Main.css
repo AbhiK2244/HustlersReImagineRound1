@@ -151,7 +151,7 @@
 }
 
 /* Title */
-.title {
+.title { 
   font-size: 27vw; 
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -160,6 +160,12 @@
   transition: all 0.3s ease; 
   white-space: nowrap; 
   padding-bottom: 5px;
+}
+
+#title-text {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Order button */
