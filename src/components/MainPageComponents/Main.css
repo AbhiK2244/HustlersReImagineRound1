@@ -229,7 +229,7 @@
 
 @keyframes order {
   0% {
-    transform: scaleX(0);
+    transform: scaleX(0);  
     transform-origin: left;
   }
   100% {
