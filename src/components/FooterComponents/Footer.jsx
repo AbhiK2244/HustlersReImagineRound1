@@ -218,7 +218,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>All Rights Reserved. Copyright © Hustlers</p>
+          <p>All Rights Reserved. Copyright © Hustlers : &nbsp; Sweekar &nbsp; Bibek &nbsp; Taniya &nbsp; Abhishek</p>
         </div>
       </footer>
     </div>
